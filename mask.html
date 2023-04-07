@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video-container {
+            position: relative;
+        }
+
+        .video-container video {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .mask {
+            /* 蒙版颜色 */
+            -webkit-mask-image: url(scratched_box_psd.png);
+            /* 添加蒙版 */
+            mask-image: url(scratched_box_psd.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            mask-image: cover;
+            -webkit-mask-position: center;
+            mask-position: center;
+            background: url(scratched_box_psd.png) no-repeat center center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask-image {
+            width: 250px;
+            height: 187.5px;
+            -webkit-mask-image: url(star.svg);
+            mask-image: url(star.svg);
+            -webkit-mask-size: 100% 100%;
+            mask-image: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <!-- <video src="./storm-16160.mp4" muted autoplay loop class="mask">
+        </video> -->
+        <video src="./ocean-65560.mp4" muted autoplay loop class="mask">
+        </video>
+    </div>
+   
+</body>
+
+</html>
